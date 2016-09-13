@@ -1,40 +1,86 @@
----
-title       : Developing Data Products Project Assignment
-subtitle    : Reproducible Pitch Presentation
-author      : Rawender Guron
-job         : Data Science Learner
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : [mathjax, quiz, bootstrap, interactive]
-mode        : selfcontained # {standalone, selfcontained, draft}
-url:
-  lib: ./libraries
-  assets: ./assets
-knit        : slidify::knit2slides
-ext_widgets : {rCharts: [libraries/nvd3]}
-github:
-  user: rawgit
-  repo: Developing_Data_Products_Project_Assignment
----
-## Introduction
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products Project Assignment</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products Project Assignment">
+  <meta name="author" content="Rawender Guron">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="./libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="./libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="./libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="./libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="./libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
-This presentation is part of the project assignment for Coursera Developing Data Products class. This is the second, 'Reproducible Pitch Pressentation', part of the assignment. 
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="./libraries/frameworks/io2012/js/slides" 
+    src="./libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="./libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="./libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="./libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="./libraries/widgets/nvd3/js/fisheye.js"></script>
 
-The first part, shiny application, can be viewed on https://rawgit.shinyapps.io/CO2_Emissions, and the code is deposited in https://github.com/rawgit/DDP_PA_1. 
 
-This part's code is deposited in https://github.com/rawgit/DDP_PA_2, and the presentation is hosted on https://rawgit.github.io/DDP_PA_2.
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products Project Assignment</h1>
+    <h2>Reproducible Pitch Presentation</h2>
+    <p>Rawender Guron<br/>Data Science Learner</p>
+  </hgroup>
+    <a href="https://github.com/rawgit/Developing_Data_Products_Project_Assignment/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
 
-The data used in this presentation has been obtained from [The World Bank](http://data.worldbank.org/indicator/EN.ATM.CO2E.PC).
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This presentation is part of the project assignment for Coursera Developing Data Products class. This is the second, &#39;Reproducible Pitch Pressentation&#39;, part of the assignment. </p>
 
---- 
-## World Per Capita CO2 Emissions (MT)
+<p>The first part, shiny application, can be viewed on <a href="https://rawgit.shinyapps.io/CO2_Emissions">https://rawgit.shinyapps.io/CO2_Emissions</a>, and the code is deposited in <a href="https://github.com/rawgit/DDP_PA_1">https://github.com/rawgit/DDP_PA_1</a>. </p>
 
-<!-- GeoChart generated in R 3.3.0 by googleVis 0.6.1 package -->
+<p>This part&#39;s code is deposited in <a href="https://github.com/rawgit/DDP_PA_2">https://github.com/rawgit/DDP_PA_2</a>, and the presentation is hosted on <a href="https://rawgit.github.io/DDP_PA_2">https://rawgit.github.io/DDP_PA_2</a>.</p>
+
+<p>The data used in this presentation has been obtained from <a href="http://data.worldbank.org/indicator/EN.ATM.CO2E.PC">The World Bank</a>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>World Per Capita CO2 Emissions (MT)</h2>
+  </hgroup>
+  <article data-timings="">
+    <!-- GeoChart generated in R 3.3.0 by googleVis 0.6.1 package -->
+
 <!-- Mon Sep 12 23:49:24 2016 -->
 
-
 <!-- jsHeader -->
+
 <script type="text/javascript">
  
 // jsData 
@@ -1099,22 +1145,29 @@ callbacks.shift()();
 // jsFooter
 </script>
  
+
 <!-- jsChart -->  
+
 <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID3d0412e22425"></script>
  
+
 <!-- divChart -->
-  
+
 <div id="GeoChartID3d0412e22425" 
   style="width: 600; height: 400;">
 </div>
 
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
----
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Major Industrialized Economies Per Capita CO2 Emissions (MT)</h2>
+  </hgroup>
+  <article data-timings="">
+    <div id = 'chart1' class = 'rChart nvd3'></div>
 
-## Major Industrialized Economies Per Capita CO2 Emissions (MT)
-
-
-<div id = 'chart1' class = 'rChart nvd3'></div>
 <script type='text/javascript'>
  $(document).ready(function(){
       drawchart1()
@@ -2051,23 +2104,114 @@ callbacks.shift()();
     };
 </script>
 
---- &radio
-## Question
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-Which 3 major economies respectively are the top 3 per capita CO2 emitters?
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Question</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>Which 3 major economies respectively are the top 3 per capita CO2 emitters?</p>
 
-1. United States, Australia, and European Union
-2. Australia, United States, and China
-3. _United States, Australia, and Canada_
-4. European Union, United States, and Japan
-5. China, United States, and European Union
+<ol>
+<li>United States, Australia, and European Union</li>
+<li>Australia, United States, and China</li>
+<li><em>United States, Australia, and Canada</em></li>
+<li>European Union, United States, and Japan</li>
+<li>China, United States, and European Union</li>
+</ol>
 
-*** .hint
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>They are all English speaking countries</p>
 
-They are all English speaking countries
+</div>
+<div class="quiz-explanation">
+  <p>United States, Australia, and Canada</p>
 
-*** .explanation
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-United States, Australia, and Canada
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='World Per Capita CO2 Emissions (MT)'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Major Industrialized Economies Per Capita CO2 Emissions (MT)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Question'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="./libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="./libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="./libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="./libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="./libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="./libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="./libraries/widgets/interactive/js/interactive.js"></script>
 
-
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="./libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="./libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
