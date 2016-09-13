@@ -1,0 +1,76 @@
+---
+title       : Developing Data Products Project Assignment
+subtitle    : Reproducible Pitch Presentation
+author      : Rawender Guron
+job         : Data Science Learner
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz, bootstrap, interactive]
+mode        : selfcontained # {standalone, selfcontained, draft}
+url:
+  lib: ./libraries
+  assets: ./assets
+knit        : slidify::knit2slides
+ext_widgets : {rCharts: [libraries/nvd3]}
+github:
+  user: rawgit
+  repo: Developing_Data_Products_Project_Assignment
+---
+## Introduction
+
+This presentation is part of the project assignment for Coursera Developing Data Products class. This is the second, 'Reproducible Pitch Pressentation', part of the assignment. 
+
+The first part, shiny application, can be viewed on https://rawgit.shinyapps.io/CO2_Emissions, and the code is deposited in https://github.com/rawgit/DDP_PA_1. 
+
+This part's code is deposited in https://github.com/rawgit/DDP_PA_2, and the presentation is hosted on https://rawgit.github.io/DDP_PA_2.
+
+The data used in this presentation has been obtained from [The World Bank](http://data.worldbank.org/indicator/EN.ATM.CO2E.PC).
+
+--- 
+## World Per Capita CO2 Emissions (MT)
+
+```{r echo=F, results='asis', message = F}
+require(googleVis)
+gchart = gvisGeoChart(data = CO2_PC[CO2_PC$Year == 2011,],
+                      locationvar = "Country",
+                      colorvar = "CO2_MT",
+                      options = list(projection="kavrayskiy-vii",
+                      width=600, height=400))
+print(gchart, tag = 'chart')
+```
+
+
+---
+
+## Major Industrialized Economies Per Capita CO2 Emissions (MT)
+
+```{r echo = F, results = 'asis', message = F}
+require(rCharts)
+n1 <- nPlot(CO2_MT ~ Year, group = 'Country', type = 'lineChart', 
+            data = CO2_PC[CO2_PC$Country %in% c("Australia","Canada","China","European Union","Japan","Russian Federation","United Kingdom","United States")
+                          & CO2_PC$Year >= 1990,]
+)
+n1$print('chart1')
+```
+
+--- &radio
+## Question
+
+Which 3 major economies respectively are the top 3 per capita CO2 emitters?
+
+1. United States, Australia, and European Union
+2. Australia, United States, and China
+3. _United States, Australia, and Canada_
+4. European Union, United States, and Japan
+5. China, United States, and European Union
+
+*** .hint
+
+They are all English speaking countries
+
+*** .explanation
+
+United States, Australia, and Canada
+
+
